@@ -1,0 +1,9 @@
+export RAW_DATA_ROOT=${PWD}/../raw
+export DATA_ROOT=${PWD}/../setData
+export MODEL_ROOT=${PWD}/../model
+export EPOCHS=400
+export EPOCHS_TRANSFER=400
+
+export SOURCE_MAIN_DATA_ROOT=/projects/txscience/kim16r/asd_classification/microarray_final_data
+export SOURCE_MAIN_DATA_RDA=final_testDataset_HT12_test/out1
+export PRETRAIN_PATH=raw/pretrain
