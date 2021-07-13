@@ -12,28 +12,29 @@ source ./env
 We suggest configuring output data to a level outside the repo so they aren't accidentally committed. 
 
 ### Step 1: Execute the data munging pipeline
-Download the pretraining source files, and setup directories and data
+Download the pretraining source files, and setup directories and data.
 ```
 time ./setup.sh > ../setup.out
 ```
-If using the sample_env values, the final, prepared dataset will bin in `../setData`. The following datasetsare prepared for the winning method used for the training pipeline below:
-#### Pre-training data and targets
+
+If using the sample_env values, the final, prepared dataset will bin in `../setData`. The following datasets are prepared:
+##### Pre-training data and targets
 ```
 gtex-SMTSD-xtrain.csv 
 gtex-SMTSD-ytrain.csv        # target/labels
 ```
-#### Training data and targets (with ASD being the 'main' model)
+##### Training data and targets (with ASD being the 'main' model)
 ```
 main-labels-xtrain.csv
 main-labels-ytrain.csv       # target/labels
 ```
-#### Validation data and targets
+##### Validation data and targets
 The following data were used for selection of parameters, including learning rate, number of layers, nodes, epochs.
 ```
 main-labels-xval.csv
 main-labels-yval.csv       # target/labels
 ```
-#### Test data and targets
+##### Test data and targets
 The following hold-out data will be used for final performance report:
 ```
 main-labels-xtest.csv
