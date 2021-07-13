@@ -56,7 +56,7 @@ To run the pretraining procedure:
 # transfer
 time python train_validate.py -src main -target labels -e 200 -r 0.0001 -y 1 -write False -modelDir ../model -dataDir ../setData  -stopSamples 0 \
      -modelToStart ../model/gtex-naive-eps:300-lr:10-nhidden:1-outputSize:31 -finalMainUpTo 4 \
-     -nRounds 40  -test > ../out/test.pretrained.nostopping.2.out
+     -nRounds 40  -test > ../out/test-pretrained
 ```
 
 Run with `-h` option for `usage` report, including description of options.
